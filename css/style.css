@@ -155,6 +155,76 @@ p {
     margin-bottom: var(--line-height);
 }
 
+/* Block Quotes */
+
+blockquote {
+    font-size: var(--h3);
+}
+
+blockquote.text-center {
+    text-align: center;
+}
+
+blockquote.text-right {
+    text-align: right;
+}
+
+blockquote p:first-of-type:before {
+    content: open-quote;
+}
+
+blockquote p:last-of-type:after {
+    content: close-quote;
+}
+
+blockquote footer {
+
+    font-size: 1rem;
+
+}
+
+blockquote footer::before {
+    content: "\2014";
+    margin-right: calc(0.25rem * var(--scale));
+}
+
+/* End Block Quotes */
+
+/* List Styles */
+
+ul.unstyled {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.inline {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: var(--font-size);
+    list-style-type: none;
+    padding-left: 0;
+}
+
+dl {
+    border-left: 4px solid black;
+    padding: var(--line-height);
+    padding-right: 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-style: italic;
+    margin-bottom: var(--line-height);
+}
+
+/* End of List Styles */
+
 /* End of Typography */
 
 /* Branding */
