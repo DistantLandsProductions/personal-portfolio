@@ -785,20 +785,24 @@ input:focus:invalid {
     position: absolute;
     object-fit: cover;
     object-position: center;
-    overflow: hidden;
-    height: 100%;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 #fullscreen-cover {
     display: flex;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
     align-items: center;
     margin-bottom: var(--line-height);
+}
+
+#fullscreen-cover h1 {
+    font-size: calc(var(--font-size) * 7);
+    margin-bottom: 0;
 }
 
 .center-content {
@@ -807,6 +811,22 @@ input:focus:invalid {
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+
+
+.wide-background {
+    left: 0;
+    right: 0;
+    min-width: 100vw;
+    height: 100%;
+}
+
+.background-primary{
+    background-color: var(--primary);
+}
+.background-secondary{
+    background-color: var(--secondary);
 }
 
 /* End of Personal Project Styles */
