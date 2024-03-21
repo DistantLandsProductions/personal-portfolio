@@ -52,6 +52,7 @@
     --gray-3: #dadada;
 
     --white: white;
+    --background-color: #030303;
 }
 
 * {
@@ -85,7 +86,7 @@ img {
 
 html {
     font-size: var(--font-size);
-    background-color: #051010;
+    background-color:var(--background-color);
 }
 
 body {
@@ -798,7 +799,6 @@ input:focus:invalid {
     align-content: center;
     align-items: center;
     margin-bottom: var(--line-height);
-    color: black;
 }
 
 .center-content {
