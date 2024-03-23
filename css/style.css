@@ -787,6 +787,74 @@ input:focus:invalid {
 
 /* End of Grid System */
 
+/* Footer Styles */
+footer {
+    margin-top: 3rem;
+    font-size: calc(1rem / var(--base-scale));
+    background-color: var(--gray-0);
+}
+
+footer h3,
+footer h4 {
+    margin-bottom: calc(1rem / var(--base-scale));
+}
+
+footer .footer-nav {
+    margin: 0;
+}
+
+footer .footer-nav a {
+    display: block;
+    overflow: hidden;
+    padding: calc((1em / var(--base-scale)) / var(--base-scale) / var(--base-scale)) calc(1em / var(--base-scale) / var(--base-scale));
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+footer .footer-nav a:hover {
+    color: var(--primary-hover);
+    border-bottom-color: var(--primary-hover);
+}
+
+footer .form-group label {
+    margin-top: 0;
+}
+
+footer .copyright {
+    background-color: var(--background-color);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer p,
+footer .social-media {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+footer .social-media {
+    justify-content: center;
+}
+
+footer .social-media a {
+    display: block;
+    overflow: hidden;
+    color: var(--primary);
+}
+
+@media screen and (min-width: 768px){
+    footer .copyright {
+        text-align: unset;
+    }
+
+    footer .social-media {
+        justify-content: flex-end;
+    }
+}
+/* End of Footer Styles */
+
 /* Personal Project Styles */
 
 #fullscreen-cover img {
