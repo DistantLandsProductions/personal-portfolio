@@ -240,10 +240,13 @@ dd {
     color: var(--white);
     border: 0 none;
     cursor: pointer;
+    border-radius: var(--line-height);
+    transition: linear 0.1s background-color, linear 0.1s padding;
 }
 
 .btn:hover {
     background-color: var(--gray-0);
+    padding: calc((1em / var(--scale)) / var(--scale)) calc(2em / var(--scale));
 }
 .btn-primary {
     background-color: var(--primary);
@@ -289,7 +292,7 @@ fieldset legend {
 }
 
 .form-group {
-    margin-bottom: var(--line-height);
+    margin-bottom: calc(var(--line-height) * 1.5);
 }
 
 fieldset .form-group:last-of-type {
@@ -302,7 +305,10 @@ fieldset .form-group:last-of-type {
 
 .form-control,
 .form-check-input {
-    accent-color: var(--secondary);
+    accent-color: var(--primary);
+    background: var(--gray-2);
+    border-radius: var(--font-size);
+    margin-top: 0.5rem;
 }
 
 input,
@@ -312,7 +318,7 @@ textarea {
     font-size: 1rem;
     line-height: var(--line-height);
     padding: calc((1em / var(--scale)) / var(--scale) / var(--scale)) calc(1em / var(--scale) / var(--scale));
-    border: 1px solid var(--gray-0);
+    border: 1px solid var(--gray-2);
     color: var(--font-color);
 }
 
@@ -836,11 +842,19 @@ input:focus:invalid {
     content: '\2605 \2605 \2605 \2605 \2605';
 }
 
+.text-center {
+    text-align: center;
+}
 
 .background-secondary{
     background-color: var(--gray-0);
     overflow: hidden;
 }
+
+.skills-container > div {
+    height: calc(var(--line-height) * 10);
+    border-left: var(--primary) solid 2px;
+    margin-bottom: var(--line-height);
 
 }
 
@@ -848,6 +862,16 @@ input:focus:invalid {
     border-left: var(--primary) solid 2px;
     padding-left: var(--font-size);
 }
+
+.squared-area {
+    aspect-ratio: 1;
+    border-radius: var(--line-height);
+}
+
+.line-below {
+    margin-bottom: var(--line-height);
+}
+
 }
 
 /* End of Personal Project Styles */
